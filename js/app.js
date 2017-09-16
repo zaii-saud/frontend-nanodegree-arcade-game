@@ -66,7 +66,7 @@ Player.prototype.reset = function() {
 //win function
 Player.prototype.success = function() {
     console.log("You Win");
-    player.reset();
+    this.reset();
 };
 
 //moving the player around according to input while chicking walls and bounds
@@ -76,12 +76,12 @@ Player.prototype.handleInput = function(keyPressed) {
             if (this.x > 0) {
                 this.x -= this.speed;
 
-            } //101?
+            }
             break;
         case 'up':
             if (this.y > 0) {
                 this.y -= this.speed;
-                if (this.y <= 85) {
+                if (this.y <= 5) {
                     this.success();
                 }
             }
@@ -104,8 +104,9 @@ Player.prototype.handleInput = function(keyPressed) {
 var player = new Player(200, 420, 50);
 var allEnemies = [];
 var enemyY = [70, 150, 230];//the three rows of enemies
+var enemyLength = enemyY.length;
 
-for (var i = 0; i < enemyY.length; i++) {
+for (var i = 0; i < enemyLength; i++) {
     allEnemies.push(new Enemy((Math.random() * (504 - 1) + 1), enemyY[i], 80 + (Math.random() * (50 - 1) + 1)));
 }
 // This listens for key presses and sends the keys to your
