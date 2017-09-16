@@ -1,3 +1,34 @@
+#Classic Arcade Game Clone
+
+
+##Installation
+
+<ul>
+<li>Download game zip file
+<li>Extract the files to the desired directory
+<li>To start playing double click on index.html to open in your browser
+<li>Start playing!
+<ul>
+
+
+##Game Play
+
+<ul>
+<li>Use the arrow key to move the player around the game board
+<li>Try to avoid the enemy bugs passing by
+<li>Get to the water and you will get your win message on the console!
+<ul>
+
+
+##Resource
+https://plus.google.com/u/0/events/cupbs3pbne7qkuqok4g0ldhntic?authkey=COGW25b5jbv3-AE
+
+
+
+
+
+
+
 frontend-nanodegree-arcade-game
 ===============================
 
